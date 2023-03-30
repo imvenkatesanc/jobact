@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JobACT</title>
+</head>
+<body>
+    <!-- Side bar-->
+    <div class="sidebar">
+        <ion-icon class="close-detail" name="close-outline"></ion-icon>
+        <h1 class="logo">
+            JOBACT
+        </h1>
+        <div class="menus">
+            <a href="#"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="newspaper-outline"></ion-icon>Find Jobs</a>
+            <a href="#"><ion-icon name="stats-chart-outline"></ion-icon>Performance</a>
+            <a href="#"><ion-icon name="bookmarks-outline"></ion-icon>Bookmarks</a>
+            <a href="#"><ion-icon name="mail-unread-outline"></ion-icon>Message</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Setting</a>
+
+        </div>
+        <div class="profile">
+            <img src="noPhoto.png" alt="profile" class="profile-img">
+            <div class="profile-name">
+                <h4 id="name">Your name</h4>
+                <p id="profession">Profession</p>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="main" id="main">
+        <div class="main-header">
+            <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="Search your best jobs here...">
+                <button class="btn-search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper" id="wrapper">
+            <div class="card" id="card">
+                <div class="card-left bg">
+                    <img id="companylogo" src="ASEN.svg" alt="img">
+                </div>
+                <div class="card-center">
+                    <h3 class="company" id="company">Asen Tech</h3>
+                    <p class="card-detail" id="description">description</p>
+                    <p class="card-loc" id="location"><ion-icon name="location-outline"></ion-icon>location</p>
+                    <div class="card-sub">
+                        <p id="time"><ion-icon name="today-outline"></ion-icon>time</p>
+                        <p id="jobtype"><ion-icon name="hourglass-outline"></ion-icon>jobtype</p>
+                        <p><ion-icon name="people-outline"></ion-icon>200 Applicants</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>Designation</h5>
+                        <a id="jobname">Web Developer</a>
+                    </div>
+                    <div class="card-salary">
+                        <p><b id="salary">$350k</b><span>/ year</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail" id="detail">
+        <ion-icon class="close-detail" name="close-outline"></ion-icon>
+        <div class="detail-header">
+            <img id="detail-companylogo" src="ASEN.svg" alt="img">
+            <h3 class="company" id="detail-company">Asen Tech</h3>
+            <p class="card-detail" id="detail-jobtitle">description</p>
+        </div>
+        <hr class="divider">
+        <div class="detail-desc">
+            <div class="about">
+                <h4>About company</h4>
+                <p id="detail-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eos libero perspiciatis incidunt quo natus laudantium pariatur magni voluptas expedita.</p>
+                <a href="#" >Read more</a>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="detail-btn">
+            <a href="#"><button class="btn-apply" id="detail-apply">Apply Now</button></a>
+            <a href="#" id="save"><button class="btn-save">Save Job</button></a>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+</html>
